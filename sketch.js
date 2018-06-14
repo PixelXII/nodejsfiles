@@ -6,8 +6,9 @@ function setup() {
 
 function draw() {
   background(80, 165, 131)
-  fill(255, 87, 51)
-  ellipse(x, y, 15, 15)
+  stroke(255, 87, 51)
+  line(mouseX, mouseX, 3, 400)
+  line(mouseY, mouseY, 6, 200)
   x+=4
   y+=5
 }
