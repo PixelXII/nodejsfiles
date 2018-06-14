@@ -11,6 +11,7 @@ function draw() {
   line(mouseY, mouseY, mouseY, mouseY)
   line(mouseX, mouseY, mouseY, mouseY)
   line(mouseX, mouseX, mouseY, mouseY)
+  line(random(1, 100), random(1, 100), mouseY*random(1, 5), mouseX%random(1, 10))
   line(mouseX, mouseX, mouseX, mouseY)
   line(mouseY, mouseX, mouseY, mouseY)
   line(mouseY, mouseX, mouseX, mouseY)
