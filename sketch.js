@@ -1,16 +1,50 @@
-function setup() {
-  createCanvas(1300, 700)
+float x, y, speedX, speedY;
+float diam = 10;
+float rectSize = 200;
+
+void setup() {
+  fullScreen();
+  fill(0, 255, 0);
+  reset();
 }
 
-function draw() {
-  var x = 100, y = 100;
-  background(255, 255, 0)
-  ellipse(mouseX, mouseY, 80, 80)
-  if (mouseIsPressed) {
-    fill(255)
-  } else {
-    fill(0, 255, 0)
+void reset() {
+  x = width/2;
+  y = height/2;
+  speedX = random(3, 5);
+  speedY = random(3, 5);
+}
+
+void draw() { 
+  background(0);
+  
+  ellipse(x, y, diam, diam);
+
+  rect(0, 0, 20, height);
+  rect(width-30, mouseY-rectSize/2, 10, rectSize);
+
+  x += speedX;
+  y += speedY;
+
+  // if ball hits movable bar, invert X direction
+  if ( x > width-30 && x < width -20 && y > mouseY-rectSize/2 && y < mouseY+rectSize/2 ) {
+    speedX = speedX * -1;
+  } 
+
+  // if ball hits wall, change direction of X
+  if (x < 25) {
+    speedX *= -1.1;
+    speedY *= 1.1;
+    x += speedX;
   }
 
-loadModel(" g Object001; v 0.000000E+00 0.000000E+00 78.0000; v 45.0000 45.0000 0.000000E+00; v 45.0000 -45.0000 0.000000E+00; v -45.0000 -45.0000 0.000000E+00; v -45.0000 45.0000 0.000000E+00; v 0.000000E+00 0.000000E+00 -78.0000; f     1 2 3; f     1 3 4;f     1 4 5;f     1 5 2;f     6 5 4;f     6 4 3;f     6 3 2; f     6 2 1; f     6 1 5; ")
+
+  // if ball hits up or down, change direction of Y   
+  if ( y > height || y < 0 ) {
+    speedY *= -1;
+  }
+}
+
+void mousePressed() {
+  reset();
 }
