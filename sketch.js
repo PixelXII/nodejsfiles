@@ -1,6 +1,6 @@
-float x, y, speedX, speedY;
-float diam = 10;
-float rectSize = 200;
+var x, y, speedX, speedY;
+var diam = 10;
+var rectSize = 200;
 
 void setup() {
   fullScreen();
