@@ -7,8 +7,14 @@ function setup() {
 function draw() {
   background(80, 165, 131)
   stroke(255, 87, 51)
-  line(mouseX, mouseX, 3, 400)
-  line(mouseY, mouseX, 9, 200)
+  line(mouseX, mouseX, mouseX, mouseX)
+  line(mouseY, mouseY, mouseY, mouseY)
+  line(mouseX, mouseY, mouseY, mouseY)
+  line(mouseX, mouseX, mouseY, mouseY)
+  line(mouseX, mouseX, mouseX, mouseY)
+  line(mouseY, mouseX, mouseY, mouseY)
+  line(mouseY, mouseX, mouseX, mouseY)
+  line(mouseY, mouseX, mouseX, mouseX)
   x+=4
   y+=5
 }
