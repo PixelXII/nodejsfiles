@@ -3,7 +3,7 @@ var diam = 10;
 var rectSize = 200;
 
 function setup() {
-  fullScreen();
+  createCanvas(1200, 700)
   fill(0, 255, 0);
   reset();
 }
