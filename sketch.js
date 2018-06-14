@@ -8,7 +8,7 @@ function draw() {
   background(80, 165, 131)
   stroke(255, 87, 51)
   line(mouseX, mouseX, 3, 400)
-  line(mouseY, mouseY, 3, 200)
+  line(mouseY, mouseX, 9, 200)
   x+=4
   y+=5
 }
