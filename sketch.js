@@ -11,21 +11,6 @@ function draw() {
   } else {
     fill(0, 255, 0)
   }
-  
-  function keyPressed() {
-    if(key === 'w') {
-      y++
-    } else if(key === 's') {
-      y--
-    } else if(key === 'a') {
-      x++
-    } else if(key === 'd') {
-      x--
-    }
-  }
-  
-}
-
 
 loadModel(# diamond.obj
 
