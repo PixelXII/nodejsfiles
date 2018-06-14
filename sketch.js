@@ -13,13 +13,13 @@ function draw() {
   }
   
   function keyPressed() {
-    if(key === UP) {
+    if(key === 'UP') {
       y++
-    } else if(key === DOWN) {
+    } else if(key === 'DOWN') {
       y--
-    } else if(key === LEFT) {
+    } else if(key === 'LEFT') {
       x++
-    } else if(key === RIGHT) {
+    } else if(key === 'RIGHT') {
       x--
     }
   }
