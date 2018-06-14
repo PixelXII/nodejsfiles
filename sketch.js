@@ -12,7 +12,7 @@ function draw() {
     fill(0, 255, 0)
   }
 
-loadModel(# diamond.obj
+loadModel("
 
 g Object001
 
@@ -32,4 +32,4 @@ f     6 4 3
 f     6 3 2
 f     6 2 1
 f     6 1 5
-          )
+          ")
