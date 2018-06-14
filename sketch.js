@@ -11,11 +11,11 @@ function draw() {
   line(mouseY, mouseY, 314, mouseY)
   line(mouseX, mouseX, mouseY, mouseY)
   line(108, mouseX, mouseY, mouseY)
-  line(mouseY, mouseY, mouseY, mouseX%6)
+  line(mouseY, mouseY, mouseY, mouseY)
   line(mouseX, mouseX, mouseX, mouseY)
   line(mouseY, mouseY, mouseY, mouseY)
-  line(mouseY, 470, mouseX, 230)
-  line(mouseX, mouseX, mouseX, mouseX)
+  line(mouseY, 470, mouseX, mouseY)
+  line(mouseX, mouseX, 230, mouseY)
   x+=4
   y+=5
 }
