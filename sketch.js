@@ -11,7 +11,7 @@ function draw() {
   line(mouseX, mouseY, mouseX+12, mouseY+12)
   line(mouseY, mouseY, 314, mouseY+12)
   line(mouseX, mouseX, mouseY, mouseY+12)
-  line(108, mouseX, mouseY, mouseY+12)
+  line(mouseY, mouseX, mouseY, mouseY+12)
   rect(180, mouseY, 15, 16)
   line(mouseY, mouseY, mouseY, mouseY+12)
   line(mouseX, mouseX, mouseX, mouseY+12)
