@@ -22,5 +22,6 @@ function draw() {
     } else if(key === RIGHT) {
       x--
     }
+  }
   
 }
