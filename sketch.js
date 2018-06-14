@@ -3,11 +3,12 @@ function setup() {
 }
 
 function draw() {
-  ellipse(50, 50, 80, 80)
+  background(255, 255, 0)
+  ellipse(mouseX, mouseY, 80, 80)
   if (mouseIsPressed) {
-    fill(0)
-    stroke(24, 53, 150)
+    fill(255)
   } else {
-    fill(40)
+    fill(0, 255, 0)
   }
+  
 }
