@@ -2,20 +2,20 @@ var x, y, speedX, speedY;
 var diam = 10;
 var rectSize = 200;
 
-void setup() {
+function setup() {
   fullScreen();
   fill(0, 255, 0);
   reset();
 }
 
-void reset() {
+function reset() {
   x = width/2;
   y = height/2;
   speedX = random(3, 5);
   speedY = random(3, 5);
 }
 
-void draw() { 
+function draw() { 
   background(0);
   
   ellipse(x, y, diam, diam);
@@ -45,6 +45,6 @@ void draw() {
   }
 }
 
-void mousePressed() {
+function mousePressed() {
   reset();
 }
