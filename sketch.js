@@ -1,4 +1,4 @@
-var x, y;
+var x, y, bubbles = [];
 function setup() {
   createCanvas(800, 800)
   x = floor(random(0, 400))
@@ -17,6 +17,7 @@ function Bubble(w, h, r) {
   this.x = x
   this.y = y
   this.r = r
+  console.log(this)
 }
 
 Bubble.prototype.draw = function() {
