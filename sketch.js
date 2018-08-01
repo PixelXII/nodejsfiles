@@ -1,7 +1,8 @@
-var x = 150, y = 150;
-
+var x, y;
 function setup() {
   createCanvas(800, 800)
+  x = floor(random(0, 400))
+  y = floor(random(0, 400))
 }
 
 function draw() {
@@ -10,8 +11,6 @@ function draw() {
 
 // BUBBLES
 
-var x = floor(random(0, 400))
-var y = floor(random(0, 400))
 function Bubble(w, h, r) {
   this.w = w
   this.h = h
