@@ -10,8 +10,8 @@ function draw() {
 
 // BUBBLES
 
-var x = random(0, 400)
-var y = random(0, 400)
+var x = floor(random(0, 400))
+var y = floor(random(0, 400))
 function Bubble(w, h, r) {
   this.w = w
   this.h = h
@@ -28,7 +28,7 @@ Bubble.prototype.draw = function() {
 }
 
 Bubble.prototype.jiggle = function() {
-  this.x -= random(0, 5)
-  this.y += random(0, 3)
+  this.x -= floor(random(0, 5))
+  this.y += floor(random(0, 3))
 }
 
