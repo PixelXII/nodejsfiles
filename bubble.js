@@ -1,5 +1,5 @@
-var x = random(0, 400)
-var y = random(0, 400)
+var x = Math.random()*400
+var y = Math.random()*400
 function Bubble(w, h, r) {
   this.w = w
   this.h = h
