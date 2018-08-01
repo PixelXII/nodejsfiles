@@ -11,20 +11,16 @@ function draw() {
 
 // BUBBLES
 
-function Bubble(w, h, r) {
+function Bubble(w, h) {
   this.w = w
   this.h = h
   this.x = x
   this.y = y
-  this.r = r
-  bubbles.push(this)
 }
 
 Bubble.prototype.draw = function() {
-  stroke(255)
-  strokeWeight(4)
-  fill(128, 255, 64)
-  ellipse(this.x, this.y, this.w, this.h, this.r)
+  fill(255)
+  ellipse(this.x, this.y, this.w, this.h)
 }
 
 Bubble.prototype.jiggle = function() {
@@ -32,3 +28,8 @@ Bubble.prototype.jiggle = function() {
   this.y += Math.floor(random(0, 3))
 }
 
+function mousePressed() {
+  var b = new Bubble(20, 20, 20)
+  b.draw()
+  bubbles.push(b)
+}
