@@ -5,7 +5,7 @@ function setup() {
 }
 
 function draw() {
- 
+ background(51)
 }
 
 // BUBBLES
@@ -23,6 +23,7 @@ function Bubble(w, h, r) {
 Bubble.prototype.draw = function() {
   stroke(255)
   strokeWeight(4)
+  fill(128, 255, 64)
   ellipse(this.x, this.y, this.w, this.h, this.r)
 }
 
