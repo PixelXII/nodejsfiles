@@ -17,7 +17,7 @@ function Bubble(w, h, r) {
   this.x = x
   this.y = y
   this.r = r
-  console.log(this)
+  bubbles.push(this)
 }
 
 Bubble.prototype.draw = function() {
