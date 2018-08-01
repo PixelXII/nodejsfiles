@@ -27,7 +27,7 @@ Bubble.prototype.draw = function() {
 }
 
 Bubble.prototype.jiggle = function() {
-  this.x -= floor(random(0, 5))
-  this.y += floor(random(0, 3))
+  this.x -= Math.floor(random(0, 5))
+  this.y += Math.floor(random(0, 3))
 }
 
