@@ -42,7 +42,7 @@ function msg(e) {
 
 function sendmsg(content) {
      var a = new UserMessage(content)
-     socket.emit('chat message', `${user.name} > ${$('#message').val()}`);
+     socket.emit('chat message', $('#message').val());
 }
 
 class BotMessage {
