@@ -24,19 +24,19 @@ class Contact {
           this.name = name
           this.profilesrc = profilesrc
           this.elem = document.createElement('div')
-          this.elem.outerHTML = `<div class="contact">
-                    <img class="contact-profile" src="${this.profilesrc}"</img>
-                    <div class="contact-name">${this.name}</div>
-                </div>`
+          console.log(this.elem)
+          id('contacts').appendChild(this.elem)
+          this.elem.style.display = 'none'
+          this.elem.className = "contact"
+          user.contacts.push(this)
+          this.elem.innerHTML = `<img class="contact-profile" src="${profilesrc}"</img>
+                    <div class="contact-name">${name}</div>`
           this.elem.addEventListner('click', () => {
                this.openDM()
           })
      }
-     add() {
-          user.contacts.push(this)
-     }
      display() {
-          id('contacts').appendChild(this.elem)
+          this.elem.style.display = 'block'
      }
      openDM() {
           current = this
