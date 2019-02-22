@@ -10,7 +10,7 @@ input {width:150px;height:25px;font-size:20px;padding:2px;border:1px solid black
 #contacts {font-size:12px;float:right;height:95%;width:20%;overflow-y:scroll;margin-right:10px;border:1px solid white;border-radius:3px;}
 .contact-profile {background:darkgrey;height:40px;width:40px;border-radius:50%;}
 .contact-name {background:lightgrey;color:black;width:fit-content;;margin-top:8px;border-radius:5px;padding:4px;height:20px;}
-button {margin-top:10px;border:1px solid black;border-radius:5px;background:rgba(17, 206, 232, 100);outline:none;cursor:pointer;}
+button {margin-top:10px;border:1px solid black;border-radius:5px;background:rgba(17, 206, 232, 100);cursor:pointer;}
 .contact {background: grey;margin:10px;padding:4px;border-radius:2px;}
 .message {width:fit-content;height:20px;margin:20px;padding:10px;color:black;border-radius:5px;background:darkgrey;}
 #inputs {display:inline;}
