@@ -1,7 +1,7 @@
 @font-face {font-family:gli;src: url(https://cdn.jsdelivr.net/gh/PixelXII/webapps/gli.ttf);}
 * { font-family:gli; }
 body { background:black; color:white;}
-input {width:150px;height:25px;font-size:20px;padding:2px;border:1px solid black;border-radius:5px;outline:none;}
+input {width:150px;height:25px;font-size:20px;padding:2px;border:1px solid black;border-radius:5px;}
 #message { position:absolute; bottom:20; width:500px; left:20px;}
 #main-container {width:60%;height:375px;overflow-y:scroll;}
 .selection {padding:8px;text-decoration:underline;width:fit-content;cursor:pointer;}
