@@ -69,7 +69,7 @@ class UserMessage {
         var p = document.createElement('div')
         id('main_container').appendChild(p)
         p.className = 'message'
-        p.innerHTML = `${user.name} > ${content}`
+        p.innerText = `${user.name} > ${content}`
         p.style.opacity = 0;
         var a = 0;
         var op = setInterval(function() {
