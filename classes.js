@@ -2,7 +2,7 @@ class BotMessage {
     constructor(name, content) {
         this.content = content
         var p = document.createElement('div')
-        id('main_container').appendChild(p)
+        id('messages_container').appendChild(p)
         p.className = 'message'
         p.style.background = 'lightgrey'
         p.textContent = `${name} > ${content}`
@@ -47,7 +47,7 @@ class Contact {
 class Dialogue {
      constructor(text) {
           var p = document.createElement('div')
-          id('main_container').appendChild(p)
+          id('messages_container').appendChild(p)
           p.style.background = '#eeeeee'
           p.innerHTML = text
           p.className = 'message'
@@ -67,7 +67,7 @@ class Dialogue {
 class UserMessage {
     constructor(content) {
         var p = document.createElement('div')
-        id('main_container').appendChild(p)
+        id('messages_container').appendChild(p)
         p.className = 'message'
         p.textContent = `${user.name} > ${content}`
         p.style.opacity = 0;
