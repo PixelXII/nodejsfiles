@@ -20,20 +20,13 @@ class BotMessage {
 }
 
 class Contact {
-     constructor(name, profilesrc) {
+     constructor(name) {
           this.name = name
-          this.profilesrc = profilesrc
-          this.elem = document.createElement('div')
-          console.log(this.elem)
+          this.elem = document.createElement('span')
           id('contacts').appendChild(this.elem)
           this.elem.style.display = 'none'
           this.elem.className = "contact"
-          user.contacts.push(this)
-          this.elem.innerHTML = `<img class="contact-profile" src="${profilesrc}"</img>
-                    <div class="contact-name">${name}</div>`
-          this.elem.addEventListner('click', () => {
-               this.openDM()
-          })
+          this.elem.innerHTML = `<div class="contact-name">${name}</div>`
      }
      display() {
           this.elem.style.display = 'block'
@@ -41,6 +34,9 @@ class Contact {
      openDM() {
           current = this
           // anything else?
+         
+         
+         // yes
      }
 }
 
