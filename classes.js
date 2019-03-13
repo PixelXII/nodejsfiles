@@ -24,12 +24,8 @@ class Contact {
           this.name = name
           this.elem = document.createElement('span')
           id('contacts').appendChild(this.elem)
-          this.elem.style.display = 'none'
           this.elem.className = "contact"
           this.elem.innerHTML = `<div class="contact-name">${name}</div>`
-     }
-     display() {
-          this.elem.style.display = 'block'
      }
      openDM() {
           current = this
